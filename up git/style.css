@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: 100vh;
+    background: url('banneer1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+    padding:5px 30px 5px 30px;
+    margin:auto;
+    background-color:rgba(0, 0, 0, 0.3) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar img{
+    width: 60px;
+}
+#nav li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+#nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* 2nd portion of header after .navbar */
+
+.ban-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 80vh;
+}
+
+.left-bar{
+    flex: 1;
+   align-items: center;
+   text-align: center;
+}
+
+.left-bar h1{
+ font-size: 60px;
+}
+
+.right-bar{
+    flex: 1;
+   text-align: center;
+}
+
+
+
+
+
+
+
+
+/* responsive design */
+
+@media only screen and (max-width: 400px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ban-area{
+        flex-direction: column !important;
+    }
+
+    .pbtn{
+        width: 100px;
+    }
+
+    .left-bar h1{
+        color: white    ;
+       }
+
+  }
